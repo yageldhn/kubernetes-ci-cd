@@ -60,7 +60,7 @@ spec:
         tier: mongo
     spec:
       containers:
-      - image: mongo:latest
+      - image: mongo:3.5
         name: mongo
         imagePullPolicy: Always
         ports:
@@ -91,7 +91,7 @@ spec:
     serviceName: puzzle
     servicePort: 3000
   rules:
-  - host: puzzle.192.168.99.100.xip.io
+  - host: puzzle.192.168.99.130.xip.io
     http:
       paths:
       - path: /
